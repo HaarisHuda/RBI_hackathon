@@ -9,7 +9,10 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-t0&bsur2_#32fqehv+0$u-o*z=
 DEBUG = True
 APPEND_SLASH = False
 ALLOWED_HOSTS = ['127.0.0.1', 'web-production-99b4c.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['https://rbihackathon2024-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-production-99b4c.up.railway.app',
+    # Add other trusted origins if needed
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
