@@ -16,7 +16,7 @@ class SpamDetector:
 
 class SpamDetectionModel(models.Model):
     text = models.CharField(max_length=255)
-    url = models.URLField(max_length=200)
+    url = models.URLField(max_length=200, null=True)
     spam_not_spam = models.BooleanField()
     # risk_associated = models.FloatField()
 
